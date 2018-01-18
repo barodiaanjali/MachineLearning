@@ -1,0 +1,8 @@
+library(readr)
+salary_data <- read_csv("D:/ALL Assignments/3.Simple Linear Regression/Salary_Data.csv")
+View(salary_data)
+attach(salary_data)
+plot(YearsExperience,Salary)
+cor(YearsExperience,Salary)
+emp_data_model <- lm(Churn_out_rate~Salary_hike)
+summary(emp_data_model)
